@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
 export default defineConfig({
-  base: './', // <- Agrega esta línea
+  base: '/trustinmuebles/', // Cambia esto por el nombre de tu repo (ej. '/trustinmuebles/')
   plugins: [
     react(),
     tailwindcss(),
@@ -13,10 +13,5 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
-  },
-  server: {
-    host: '0.0.0.0',
-    port: 5173,
-    open: true,
   },
 })
